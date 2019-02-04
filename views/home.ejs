@@ -1,0 +1,26 @@
+<%- include('partial/header') -%>
+
+<h1> <%= title %> </h1>
+
+<p> <%= content %> </p>
+
+
+<% postdata.forEach( (item) => { %>
+  <% console.log(item.title +' '+ item.content)  %>
+  <h2><%= item.title %></h2>
+  <p><%= item.content %></p>
+<% }) %>
+
+
+<!-- <% for(var i=0; i < postdata.length; i++) { %>
+    <% console.log(postdata[i].title +' '+ postdata[i].content)  %>
+    <ul>
+      <li><%= postdata[i].title %></li>
+      <li><%= postdata[i].content %></li>
+    </ul>
+ <% } %> -->
+
+
+ 
+
+<%- include('partial/footer') -%>
